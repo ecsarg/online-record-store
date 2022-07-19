@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS shop_db;
+
+CREATE DATABASE shop_db;
