@@ -1,0 +1,14 @@
+{
+  "name": "groupp2",
+  "version": "1.0.0",
+  "description": "2nd group project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Broussard",
+  "license": "ISC",
+  "dependencies": {
+    "foundation-sites": "^6.7.5"
+  }
+}
