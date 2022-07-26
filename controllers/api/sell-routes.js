@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../../config/connection');
-const { **enter api route names here** } = require('../../models');
+const { PostRecord, Record, User, Genre } = require('../../models');
 const withAuth = require('../../utils/auth');
 const { post } = require('../home-routes');
 
