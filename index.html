@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
+
+    <main>
+      {{{ body }}}
+    </main>
+
 <body>
 
     <div class="grid-container">
@@ -29,10 +34,10 @@
             <ul class="topAlbumsContainer"></ul>
                 <img src="./images/badbunny.jpg">
                 <li class="albums">
-                <p> Artist: {{artist}}</p>
-                <p> Album Title: {{name}} </p>
-                <p> Release Year: {{releaseYear}}</p>
-                <p> Price: {{price}}</p>
+                <p> Artist: {{{artist}}}</p>
+                <p> Album Title: {{{name}}} </p>
+                <p> Release Year: {{{releaseYear}}}</p>
+                <p> Price: {{{price}}}</p>
                 <img src="./images/buble2.jpg">
                 <p> Album Title: Christmas </p>
                 <p> Release Year: </p>
@@ -76,7 +81,7 @@
       <script src="javascript/vendor/foundation.js"></script>
       <script src="javascript/scripts.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
+      <script type="module" src="./server.js</script>
       
   </body>
 </html>
