@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Swap</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+
+    <main>
+      {{{ body }}}
+    </main>
+
+<body>
+
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <h1 class="centered">Welcome to Record Swap! </h1>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x grid-margin-x">
+        <div class="large-12">
+          <div class="callout text-center">
+            <h3>Buy New Or Used, Or Sell Your Own </h3>
+            <p>Once you've signed up, you can browse our full catalouge of new and used records - or post your own listings to sell to other members.</p>
+            
+            <script id="topAlbumsTemplate" type="text/x-handl"></script>
+            <h2> Top New Albums</h2>
+            <ul class="topAlbumsContainer"></ul>
+                <img src="./images/badbunny.jpg">
+                <li class="albums">
+                <p> Artist: {{{artist}}}</p>
+                <p> Album Title: {{{name}}} </p>
+                <p> Release Year: {{{releaseYear}}}</p>
+                <p> Price: {{{price}}}</p>
+                <img src="./images/buble2.jpg">
+                <p> Album Title: Christmas </p>
+                <p> Release Year: </p>
+                <p> Price: </p>
+                <img src="./images/replacements.jpg">
+                <p> Album Title: </p>
+                <p> Release Year: </p>
+                <p> Price</p>
+              </li>
+            </script>
+
+
+            </div>
+            <div class="grid-container text-center grid-y">
+                <div class="large-6">
+                <p><a href="buy.html">Buy</a><br/>Buy records new</p>
+              </div>
+            </div>
+            <div class="text-center grid-y">
+                <div class="large-6 cell">
+                <p><a href="sell.html">Sell</a><br/>Sell your own records</p>
+            </div>
+            </div>
+              <div class="large-6 cell text-center grid-y">
+                <p><a href="signup.html">Sign Up</a><br/>Create your profile</p>
+              </div>
+            <div class="text-center grid-y">
+                <div class="large-6 cell">
+                <p><a href="login.html">Login</a><br/>Log in to an existing profile</p>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+      <script src="javascript/vendor/jquery.js"></script>
+      <script src="javascript/vendor/what-input.js"></script>
+      <script src="javascript/vendor/foundation.js"></script>
+      <script src="javascript/scripts.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="module" src="./server.js</script>
+      
+  </body>
+</html>
