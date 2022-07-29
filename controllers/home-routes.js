@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const sequelize = require('../config/connection');
 const { PostRecord, Record, User } = require('../models');
 
 // get all post for homepage
