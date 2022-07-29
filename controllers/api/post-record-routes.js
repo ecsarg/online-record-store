@@ -2,7 +2,7 @@ const router = require('express').Router();
 const sequelize = require('../../config/connection');
 const { PostRecord, Interest, User } = require('../../models');
 const withAuth = require('../../utils/auth');
-const { post } = require('../home-routes');
+// const { post } = require('../home-routes');
 
 // get all users posts to sell
 router.get('/', (req, res) => {
