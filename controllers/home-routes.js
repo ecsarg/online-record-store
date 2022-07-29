@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { PostRecord, Record, User } = require('../models');
+const { PostRecord, Interest, User } = require('../models');
 
 // get all post for homepage
 router.get('/', (req, res) => {
