@@ -31,14 +31,14 @@ https://github.com/ecsarg/online-record-store
 ## Demo
 **Webpage Home:**
 
-![Screenshot of the webpage Home.](public/img/screenshot-1.png)
+![Screenshot of the webpage Home.](./images/screenshot-1.jpg)
 
 
 ## Project Objective
-
+To create a website where customers can sell their used records, or buy from others
 
 ## User Story
-
+As a customer, I want to create a profile so that I can interact with other customers to buy and sell records online. 
 
 ## Technologies 
 ```
