@@ -5,14 +5,20 @@
     </h2>
     <form class="edit-post-form">
         <div>
-            <input name="post-title" type="text" value="{{post.title}}" />
+            <input name="post-title" type="text" value="{{postRecord.title}}" />
             <span>({{PostRecord.img_url}})</span>
+            <input name="post-band" type="text" value="{{postRecord.band_name}}" />
+            <input name="post-album" type="text" value="{{postRecord.album_name}}" />
+            <input name="post-genre" type="text" value="{{postRecord.genre_id}}" />
+            <input name="post-price" type="text" value="{{postRecord.price}}" />
+            <input name="post-stock" type="text" value="{{postRecord.stock}}" />
+
         </div>
-        <div>
+        {{!-- <div>
             {{post.vote_count}} {{format_plural "point" post.vote_count}} by you on {{format_date post.created_at}}
             |
             <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
-        </div>
+        </div> --}}
         <button type="submit">Save post</button>
         <button type="button" class="delete-post-btn">Delete post</button>
     </form>

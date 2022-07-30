@@ -19,7 +19,18 @@ router.get('/:id', (req, res) => {
             id: req.params.id
         },
         include: [
-
+            {
+                model: PostRecord,
+                attributes: ['id', 'title', 'img_url', 'band_name', 'album_name', 'genre_id', 'price', 'stock', 'created_at']
+              },
+              {
+                model: Interest,
+                attributes: ['id', 'comment_text', 'created_at'],
+                include: {
+                  model: Post,
+                  attributes: ['title']
+                }
+              }
         ]
     })
         .then(dbUserData => {
