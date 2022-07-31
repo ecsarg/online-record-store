@@ -5,19 +5,101 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Record Swap</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="./public/stylesheets/foundation.css">
   </head>
-<body>
-    <h1> Sell </h1>
-    
+<body>    
+    <div style="background-color: rgb(15, 82, 0) ;" class="text-center">
+      <div class="align-center">
+        <div class="large-12 cell">
+          <img src="./images/recordswaplogosmol.jpg">
+        </div>
+       </div>
+      </div>
+       <div style="background-color:black;" class="text-center grid-y">
+                   <div class="large-6">
+                <p style="color:antiquewhite ;"><a href="index.html">Home</a><br/>Return to homepage</p>
+              </div>
+            </div>
+      <div style="background-color:black;" class="text-center grid-y">
+                <div class="large-6">
+                <p style="color:antiquewhite ;"><a href="buy.html">Buy</a><br/>Buy records new</p>
+              </div>
+            </div>
+      <div style="background-color:black ;"  class="text-center grid-y">
+                <div class="large-6 cell">
+                <p style="color:antiquewhite ;"><a href="profile.html">Profile</a><br/>Your profile page</p>
+            </div>
+           </div>
+      <div style="background-color:black ;"  class="text-center grid-y">
+                <div class="large-6 cell">
+                <p style="color:antiquewhite ;"><a href="logout.html">Log out</a><br/>Log out of your profile</p>
+            </div>
+            </div>
+
+<div class="grid-frame align-center grid-margin-y grid-container">            
+  <div class="row">
+  <div class="columns">
+	<form>
+       <label for="avatar">Upload a picture of the album you're selling:</label>
+
+<input type="file"
+       name="avatar"
+       accept="image/png, image/jpeg">
+   
+
+      <label>Artist:
+        <input type="text" placeholder="Artist name">
+      </label>
+           <label>Album Title:
+        <input type="text" placeholder="Name of the album">
+      </label>
+            <label>Genre:
+        <input type="text" placeholder="Genre of music">
+      </label>
+          <label>Year Released:
+        <input type="text" placeholder="What year was this album released?">
+      </label>        <label>
+        Additional Information:
+        <textarea placeholder="Optional"></textarea>
+      </label>
+
+      <p>  Set your asking price: </p>
+      <div class="input-group">
+        <span class="input-group-label">$</span>
+        <input class="input-group-field" type="url"><br>
+        
+
+
+        </div>
+        <div style="text-align: center;">
+          <div class="input-group-button"></div>
+       <input type="submit" class="button" value="Submit">
+        </div>
+       </div>
+      
+    </form>
+    </div>
+    </div>
+    </div>
+
+
+
+            </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    <script src="javascript/vendor/jquery.js"></script>
-    <script src="javascript/vendor/what-input.js"></script>
-    <script src="javascript/vendor/foundation.js"></script>
-    <script src="javascript/scripts.js"></script>
+    <script src="public/javascript/vendor/jquery.js"></script>
+    <script src="public/javascript/vendor/what-input.js"></script>
+    <script src="public/javascript/vendor/foundation.js"></script>
+  
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     
   </body>
+  <footer>
+  <div style="background-color:rgb(45, 44, 44) ;">
+   <p style="color:antiquewhite ; text-align:center;">© Record Swap 2022 </p>
+   </div>
+</footer>
 </html>
