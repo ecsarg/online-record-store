@@ -1,5 +1,5 @@
 {
-  "name": "tech-blog-challenge",
+  "name": "online-record-store",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -29,7 +29,7 @@
     "multer-s3": "^2.9.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
-    "node": "^18.5.0",
+    "node": "^16.16.0",
     "sequelize": "^6.21.3"
   }
 }

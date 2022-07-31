@@ -22,7 +22,8 @@ Post.init({
         }
     },
     img_url: {
-        type: DataTypes.STRING,
+        //type: DataTypes.STRING,
+        type: DataTypes.BLOB,
         allowNull: false,
       },
       band_name: {
