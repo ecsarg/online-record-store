@@ -2,12 +2,14 @@ async function newFormHandler(event) {
     event.preventDefault();
 
     const title = document.querySelector('input[name="post-title"]').value;
-    const img_url = document.querySelector('input[name="post-url"]').value;
-    const band_name = document.querySelector('input[name="post-band"]').value;
-    const album_name = document.querySelector('input[name="post-album"]').value;
-    const genre_id = document.querySelector('input[name="post-genre"]').value;
+    // const post_content = document.querySelector('textarea[name="post-content"]').value.trim();
+    const img_url = document.querySelector('input[name="image"]').value;
+    const band_name = document.querySelector('input[name="post-band-name"]').value;
+    const album_name = document.querySelector('input[name="post-album-name"]').value;
+    const genre = document.querySelector('input[name="post-genre"]').value;
     const price = document.querySelector('input[name="post-price"]').value;
     const stock = document.querySelector('input[name="post-stock"]').value;
+
 
     const response = await fetch(`/api/posts`, {
         method: 'POST',
@@ -16,7 +18,7 @@ async function newFormHandler(event) {
             img_url,
             band_name,
             album_name,
-            genre_id,
+            genre,
             price,
             stock
         }),

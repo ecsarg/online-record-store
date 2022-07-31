@@ -1,12 +1,29 @@
 <article class="post">
-      <div class="title">
-        <a href="{{post_url}}" target="_blank">{{title}}</a>
-        <span>({{format_url post_url}})</span>
-      </div>
-      <div class="meta">
-        by {{user.username}} on
-        {{format_date created_at}}
-        |
-        <a href="/post/{{id}}">{{interests.length}} {{format_plural "comment" interests.length}}</a>
-      </div>
-    </article>
+    <div class="whole-post">
+        <div class="info-section">
+            <div class="post-name">
+                <a href="/post/{{id}}" class="links">{{title}}</a>
+            </div>
+            <div class="created-by">
+                <p id="comment-subtitle">
+                    Posted by <b>{{user.username}} </b> on <b>{{formatDate created_at}}</b>
+                </p>
+            </div>
+        </div>
+        <div class="content-section">
+            <p>      
+                
+                {{!-- <div class="col-md-12 ml-auto"><img class="modal-car-image" src="{{img_url}}" alt=""> --}}
+                
+                
+                {{!-- <br>{{image_url}} --}}
+                <br>{{img_url}}
+                <br>{{band_name}}
+                <br>{{album_name}}
+                <br>{{genre}}
+                <br>{{price}}
+                <br>{{stock}}
+            </p>
+        </div>
+    </div>
+</article>

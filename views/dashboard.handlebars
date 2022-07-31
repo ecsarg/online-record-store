@@ -1,51 +1,20 @@
-<section>
-    <h2>Create New Post</h2>
-
-    <form class="new-post-form">
-        <div>
-            <label for="post-title">Title</label>
-            <input type="text" id="post-title" name="post-title" />
-        </div>
-        <div class="image-btn col-md-12 ml-auto justify-content-md-center ">
-            <label>Select your Record Image:</label> <br>
-            <input type="file" name="post-url" required>
-        </div>
-        <div>
-            <label for="post-url">Band Name</label>
-            <input type="text" name="band-name" />
-        </div>
-        <div>
-            <label for="post-url">Album Name</label>
-            <input type="text" name="album-name" />
-        </div>
-        <div>
-            <label for="post-url">Genre</label>
-            <input type="text" name="genre" />
-        </div>
-        <div>
-            <label for="post-url">Price</label>
-            <input type="text" name="price" />
-        </div>
-        <div>
-            <label for="post-url">Stock</label>
-            <input type="text" name="stock" />
-        </div>
-        <button type="submit" class="btn">Create</button>
-    </form>
+<section class="new-post-section">
+    <button type="submit" class="btn" id="create-new-post">Add Post Record</button>
 </section>
+
 
 {{#if posts.length}}
 <section>
-    <h2>Your Posts</h2>
-    <ol>
+    <h2>Your Dashboard</h2>
+    <ul class="post-list">
         {{#each posts as |post|}}
         <li>
             {{> post-info post}}
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
         </li>
         {{/each}}
-    </ol>
+    </ul>
 </section>
 {{/if}}
 
-<script src="/javascript/add-post.js"></script>
+<script src="/javascript/create-post.js"></script>

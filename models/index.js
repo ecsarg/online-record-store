@@ -1,34 +1,35 @@
-const Interest = require('./Interest');
-const PostRecord = require('./PostRecord');
 const User = require('./User');
+const Post = require('./Post');
+const Comment = require('./Comment');
 
-//Associations
-User.hasMany(PostRecord, {
-    foreignKey: 'user_id'       // User can have many records
-});
 
-PostRecord.belongsTo(User, {
-    foreignKey: 'user_id',      // A record belongs to a user
-    onDelete: 'SET NULL'
-});
+User.hasMany(Post, {
+    foreignKey: 'user_id'
+})
 
-Interest.belongsTo(User, {
-    foreignKey: 'user_id',      // Comment of interest belongs to a user
-    onDelete: 'SET NULL'
-});
+User.hasMany(Comment, {
+    foreignKey: 'user_id'
+})
 
-Interest.belongsTo(PostRecord, {
-    foreignKey: 'post_id',      // Comment of interest belongs to a post record
-    onDelete: 'SET NULL'
-});
+Post.belongsTo(User, {
+    foreignKey: 'user_id'
+})
 
-User.hasMany(Interest, {
-    foreignKey: 'user_id',      // A user has many comments
-    onDelete: 'SET NULL'
-});
+Post.hasMany(Comment, {
+    foreignKey: 'post_id'
+})
 
-PostRecord.hasMany(Interest, {
-    foreignKey: 'post_id'       // A post has many comments
-});
+Comment.belongsTo(User, {
+    foreignKey: 'user_id'
+})
 
-module.exports = { User, PostRecord, Interest };
+Comment.belongsTo(Post, {
+    foreignKey: 'post_id'
+})
+
+
+module.exports = {
+    User,
+    Post,
+    Comment
+};
