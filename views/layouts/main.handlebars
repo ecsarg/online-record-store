@@ -12,10 +12,11 @@
 <body>
     <div class="wrapper">
         <header>
-            <h1>
+            {{!-- <nav>
                 <a href="/">Home</a>
-            </h1>
+            </nav> --}}
             <nav>
+                <a href="/">Home</a>
                 {{#if loggedIn}}
                 <a href="/dashboard">Dashboard</a>
                 <button id="logout" class="btn-no-style logout">Logout</button>
