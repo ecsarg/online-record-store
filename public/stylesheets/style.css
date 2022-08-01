@@ -8,23 +8,23 @@ html {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    color: #2d3d56;
+    color: #8a8383;
 }
 
 main,
 .site-name {
-    background-color: #dae0c7;
+    background-color: #abf2f7;
 }
 
 a,
 .btn-no-style,
 #comment-subtitle {
-    color: #191d18;
+    color: #d9ead3;
 }
 
 a:hover,
 .btn-no-style:hover {
-    color: #191d18;
+    color: #53635a;
 }
 
 a {
@@ -154,13 +154,12 @@ header h1 {
 .site-row {
     display: flex;
     border-bottom: 1px solid #ccc;
-    justify-content: center;
+    justify-content: left;
     padding-left: 5%;
     padding-bottom: 2%;
 }
 
 .site-name {
-    align-items: center;
     margin-bottom: 10px;
     padding: 0px 10px;
     border-radius: 5%;
