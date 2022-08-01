@@ -30,20 +30,36 @@ https://github.com/ecsarg/online-record-store
 
 
 ## Demo
+
 **Webpage Home:**
 
-![Screenshot of the webpage Home.](./images/screenshot-1.jpg)
+![Screenshot of the webpage Home.](public/img/screenshot-1.png)
 
+**User Sign Up:**
+
+![Screenshot of a User Sign Up.](public/img/screenshot-2.png)
+
+**Adding a New Post:**
+
+![Screenshot of Adding a New Post.](public/img/screenshot-3.png)
+
+**Dashboard of a User with Edit option:**
+
+![Screenshot of Dashboard of a User with Edit option.](public/img/screenshot-4.png)
+
+**Adding a comment to a Record Post:**
+
+![Screenshot of Adding a comment to a Record Post.](public/img/screenshot-5.png)
 
 ## Project Objective
-To create a website where customers can sell their used records, or buy from others
+To create a website where customers can sell their used records, or buy from others. Having the option to add the information of the records and an image link as a reference for the album. Users will be able to communicate by adding comments to all the posts!
 
 ## User Story
-As a customer, I want to create a profile so that I can interact with other customers to buy and sell records online. 
+As a customer, I want to create a profile so that I can interact with other customers to buy and sell records online.
 
 ## Technologies 
 ```
-node.js, npm inquirer, JavaScript, CSS, mysql2, Express, dotenv, Handlebars, Sequelize
+node.js, npm inquirer, JavaScript, CSS, mysql2, Express, dotenv, Handlebars, Sequelize, Foundation
 ```
 
 ## Installation
