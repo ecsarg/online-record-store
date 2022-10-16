@@ -24,8 +24,10 @@
 Website link:
 https://gentle-stream-19606.herokuapp.com/
 
-
 GitHub project:
+https://github.com/Israel2800/Online-Record-Store
+
+GitHub project group:
 https://github.com/ecsarg/online-record-store
 
 
