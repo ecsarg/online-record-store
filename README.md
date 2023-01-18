@@ -22,7 +22,7 @@
 
 ##  Project Links
 Website link:
-https://gentle-stream-19606.herokuapp.com/
+https://online-record-store.herokuapp.com/
 
 GitHub project:
 https://github.com/Israel2800/Online-Record-Store
